@@ -1,6 +1,6 @@
-title: jekyll-rtd-theme
+title: JNoSQL
 lang: en
-description: Opinionated github flavored standard document theme for open source projects, with few options, but everything!
+description: The Eclipse JNoSQL is a framework to help developers create enterprise-grade applications using Java and NoSQL technologies. It helps them create scalable applications while maintaining low coupling with the underlying NoSQL technology.
 
 theme: null
 
