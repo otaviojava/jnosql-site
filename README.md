@@ -90,8 +90,7 @@ Particular behavior matters. Even within the same type, each NoSQL database has 
 
 Find out more information and get involved!
 
-* Website: http://www.jnosql.org/
-* Twitter: https://twitter.com/jnosql
-* GitHub Repo: https://github.com/eclipse?q=Jnosql
-* Mailing List: https://accounts.eclipse.org/mailing-list/jnosql-dev
-* CI Server : https://ci.eclipse.org/jnosql/
+* [Website](http://www.jnosql.org/)
+* [Twitter](https://twitter.com/jnosql)
+* [GitHub Repo](https://github.com/eclipse?q=Jnosql)
+* [Mailing List](https://accounts.eclipse.org/mailing-list/jnosql-dev)
