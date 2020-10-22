@@ -24,7 +24,7 @@ In a maven project, the first step is to add the dependencies. Where we'll add t
 
 [Check here to take the latest version.](https://mvnrepository.com/artifact/org.eclipse.jnosql.artemis/artemis-column)
 
-**Add a key-value vendor in the communication dependency, e.g.:** 
+**Add a column vendor in the communication dependency, e.g.:** 
 
 ```xml
 <dependency>
