@@ -2,7 +2,7 @@
 sort: 1
 ---
 
-# One Mapping API, multiples databases
+# Introduction
 
 Eclipse NoSQL has one API for each NoSQL database type. However, it uses the same annotations to map Java objects. Therefore, with just these annotations that look like JPA, there is support for more than twenty NoSQL databases.
 
