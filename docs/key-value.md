@@ -11,7 +11,7 @@ A key–value database is a data storage paradigm designed for storing, retrievi
 
 In a maven project, the first step is to add the dependencies. Where we'll add the Mapper dependency, think JPA to Key-value NoSQL, and then a communication dependency, think JDBC to Key-value NoSQL. 
 
-Add the Eclipse JNoSQL Artemis dependency;
+1. Add the Eclipse JNoSQL Artemis dependency;
 
 ```xml
 <dependency>
@@ -23,7 +23,7 @@ Add the Eclipse JNoSQL Artemis dependency;
 
 [Check here to take the latest version.](https://mvnrepository.com/artifact/org.eclipse.jnosql.artemis/artemis-key-value)
 
-Add a key-value vendor in the communication dependency, e.g.: 
+2. Add a key-value vendor in the communication dependency, e.g.: 
 
 ```xml
 <dependency>
@@ -33,7 +33,7 @@ Add a key-value vendor in the communication dependency, e.g.:
 </dependency>
 ```
 
-Use annotation to define both the Id and the entity name.
+3. Use annotation to define both the Id and the entity name.
 
 ```java
 @Entity
@@ -50,7 +50,7 @@ public class User implements Serializable {
 }
 ```
 
-Create an eligible **BucketManager** using the Producer methods in BucketManager.
+4. Create an eligible **BucketManager** using the Producer methods in BucketManager.
 
 ```java
 @ApplicationScoped
@@ -82,7 +82,7 @@ Eclipse JNoSQL has tight integration with Eclipse MicroProfile Configuration, th
 
 
 
-That's it! Now you're ready to go with CDI and a Key-Value NoSQL database.
+5. That's it! Now you're ready to go with CDI and a Key-Value NoSQL database.
 
 ```java
 public class App {
@@ -126,7 +126,7 @@ public class UserService {
 }
 ```
 
-Create your own repository.
+6. Create your own repository.
 
 ```java
 public interface UserRepository extends Repository<User, String> {}
