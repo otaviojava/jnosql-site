@@ -21,3 +21,5 @@ The project has two layers:
 
 ![](http://www.jnosql.org/images/layers.png)
 
+## Supported NoSQL Database
+
