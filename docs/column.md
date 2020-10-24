@@ -63,7 +63,7 @@ public class ColumnFamilyManagerProducer {
 
   private static final String KEY_SPACE = "developers";
 
-  private ColumnConfiguration<> cassandraConfiguration;
+  private ColumnConfiguration cassandraConfiguration;
 
   private ColumnFamilyManagerFactory managerFactory;
 
