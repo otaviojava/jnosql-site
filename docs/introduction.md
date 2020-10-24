@@ -41,7 +41,7 @@ Optional nameResult = repository.findByName("Diana");
 ```
 
 
-## Beyond JPA
+**Beyond JPA**
 
 JPA is a good API for object-relationship mapping and it's already a standard in the Java world defined in JSRs. It would be great to use the same API for both SQL and NoSQL, but there are behaviors in NoSQL that SQL does not cover, such as time to live and asynchronous operations. JPA was simply not made to handle those features.
 
@@ -57,22 +57,21 @@ template.insert(diana, Duration.ofSeconds(1));
 ```
 
 
-## A Fluent API
+**A Fluent API**
 
 Eclipse JNoSQL is a fluent API that makes it easier for Java developers create queries that either retrieve or delete information in a Document type, for example.
 
 
-## Let's not reinvent the wheel: Graph
+**Let's not reinvent the wheel: Graph**
 
 The Communication Layer defines three new APIs: Key-Value, Document and Column Family. It does not have new Graph API, because a very good one already exists. Apache TinkerPop is a graph computing framework for both graph databases (OLTP) and graph analytic systems (OLAP). Using Apache TinkerPop as Communication API for Graph databases, the Mapping API has a tight integration with it.
 
 
-
-## Particular behavior matters in NoSQL database
+**Particular behavior matters in NoSQL database**
 
 Particular behavior matters. Even within the same type, each NoSQL database has a unique feature that is a considerable factor when choosing a database over another. This ‘’feature’’ might make it easier to develop, make it more scaleable or consistent from a configuration standpoint, have the desired consistency level or search engine, etc. Some examples are Cassandra and its Cassandra Query Language and consistency level, OrientDB with live queries, ArangoDB and its Arango Query Language, Couchbase with N1QL - the list goes on. Each NoSQL has a specific behavior and this behavior matters, so JNoSQL is extensible enough to capture this substantiality different feature elements.
 
-## Find out more information and get involved!
+**Find out more information and get involved!**
 
 * [Website](http://www.jnosql.org/)
 * [Twitter](https://twitter.com/jnosql)
