@@ -4,12 +4,10 @@ sort: 5
 
 # Starting with Key-Value
 
-
-
-This guide will explain how to use a key-value database with JNoSQL. 
+This guide will explain how to use a key-value database with JNoSQL.
 A key–value database is a data storage paradigm designed for storing, retrieving, and managing associative arrays, and a data structure more commonly known today as a dictionary or hash table. Dictionaries contain a collection of objects, or records, which in turn have many different fields within them, each containing data. These records are stored and retrieved using a key that uniquely identifies the record, and is used to find the data within the database.
 
-In a maven project, the first step is to add the dependencies. Where we'll add the Mapper dependency, think JPA to Key-value NoSQL, and then a communication dependency, think JDBC to Key-value NoSQL. 
+In a maven project, the first step is to add the dependencies. Where we'll add the Mapper dependency, think JPA to Key-value NoSQL, and then a communication dependency, think JDBC to Key-value NoSQL.
 
 **1 Add the Eclipse JNoSQL Artemis dependency;**
 
@@ -23,7 +21,7 @@ In a maven project, the first step is to add the dependencies. Where we'll add t
 
 [Check here to take the latest version.](https://mvnrepository.com/artifact/org.eclipse.jnosql.artemis/artemis-key-value)
 
-**Add a key-value vendor in the communication dependency, e.g.:** 
+**Add a key-value vendor in the communication dependency, e.g.:**
 
 ```xml
 <dependency>
