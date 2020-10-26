@@ -74,3 +74,16 @@
     max-width: $width-xl - $theme-menu-width;
   }
 }
+
+.suported-dbs-table {
+  border-collapse: collapse;
+  > table,
+  td,
+  th {
+    border: 1px solid black;
+  }
+}
+
+.suported-dbs-table table td {
+  border: 0px solid;
+}

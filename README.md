@@ -16,8 +16,6 @@ The project has two layers:
 
 ![](http://www.jnosql.org/images/layers.png)
 
-
-
 ### Key features
 
 - Simple APIs supporting all well-known NoSQL storage types - Column Family, Key-Value Pair, Graph and Document databases.
