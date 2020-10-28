@@ -1,17 +1,14 @@
 ---
-sort: 5
-
+sort: 7
 ---
 
 # Starting with Document
 
-
-
-This guide will explain how to use a document database with JNoSQL. 
+This guide will explain how to use a document database with JNoSQL.
 A document-oriented database, or document store, is a computer program designed for storing, retrieving, and managing document-oriented information, also known as semi-structured data.
 Document-oriented databases are one of the main categories of NoSQL databases, and the popularity of the term "document-oriented database" has grown with the use of the term NoSQL itself. XML databases are a subclass of document-oriented databases that are optimized to work with XML documents. Graph databases are similar, but add another layer, the relationship, which allows them to link documents for rapid traversal.
 
-In a maven project, the first step is to add the dependencies. Where we'll add the Mapper dependency, think JPA to Document NoSQL, and then a communication dependency, think JDBC to Document NoSQL. 
+In a maven project, the first step is to add the dependencies. Where we'll add the Mapper dependency, think JPA to Document NoSQL, and then a communication dependency, think JDBC to Document NoSQL.
 
 **1 Add the Eclipse JNoSQL Artemis dependency;**
 
@@ -25,7 +22,7 @@ In a maven project, the first step is to add the dependencies. Where we'll add t
 
 [Check here to take the latest version.](https://mvnrepository.com/artifact/org.eclipse.jnosql.artemis/artemis-document)
 
-**Add a document vendor in the communication dependency, e.g.:** 
+**Add a document vendor in the communication dependency, e.g.:**
 
 ```xml
 <dependency>

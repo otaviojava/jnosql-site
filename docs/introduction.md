@@ -20,11 +20,9 @@ public class God {
 }
 ```
 
-
 Another example can be found in an article that demonstrates the same annotated entity used across different NoSQL databases: Redis, Cassandra, Couchbase, and Neo4J. The approach is "stick to the API": the developer can replace Redis with Hazelcast, as both implement the Key-Value API, thus avoiding vendor lock-in with one of these databases.
 
 Vendor lock-in is one of the things any Java project needs to consider when choosing NoSQL databases. If there's a need for a switch, other considerations include: time spent on the change, the learning curve of a new API to use with this database, the code that will be lost, the persistence layer that needs to be replaced, etc. Eclipse JNoSQL avoids most of these issues through the Communication APIs. It also has template classes that apply the design pattern 'template method’ to databases operations. And the Repository interface allows Java developers to create and extend interfaces, with implementation automatically provided by Eclipse JNoSQL: support method queries built by developers will automatically be implemented for them.
-
 
 ```java
 public interface GodRepository extends Repository<God, String> {
@@ -40,11 +38,9 @@ Optional idResult = repository.findById("diana");
 Optional nameResult = repository.findByName("Diana");
 ```
 
-
 **Beyond JPA**
 
 JPA is a good API for object-relationship mapping and it's already a standard in the Java world defined in JSRs. It would be great to use the same API for both SQL and NoSQL, but there are behaviors in NoSQL that SQL does not cover, such as time to live and asynchronous operations. JPA was simply not made to handle those features.
-
 
 ```java
 ColumnTemplateAsync templateAsync = …;
@@ -56,16 +52,13 @@ Duration ttl = Duration.ofSeconds(1);
 template.insert(diana, Duration.ofSeconds(1));
 ```
 
-
 **A Fluent API**
 
 Eclipse JNoSQL is a fluent API that makes it easier for Java developers create queries that either retrieve or delete information in a Document type, for example.
 
-
 **Let's not reinvent the wheel: Graph**
 
 The Communication Layer defines three new APIs: Key-Value, Document and Column Family. It does not have new Graph API, because a very good one already exists. Apache TinkerPop is a graph computing framework for both graph databases (OLTP) and graph analytic systems (OLAP). Using Apache TinkerPop as Communication API for Graph databases, the Mapping API has a tight integration with it.
-
 
 **Particular behavior matters in NoSQL database**
 
@@ -73,7 +66,7 @@ Particular behavior matters. Even within the same type, each NoSQL database has 
 
 **Find out more information and get involved!**
 
-* [Website](http://www.jnosql.org/)
-* [Twitter](https://twitter.com/jnosql)
-* [GitHub Repo](https://github.com/eclipse?q=Jnosql)
-* [Mailing List](https://accounts.eclipse.org/mailing-list/jnosql-dev)
+- [Website](http://www.jnosql.org/)
+- [Twitter](https://twitter.com/jnosql)
+- [GitHub Repo](https://github.com/eclipse?q=Jnosql)
+- [Mailing List](https://accounts.eclipse.org/mailing-list/jnosql-dev)

@@ -1,16 +1,13 @@
 ---
-sort: 6
-
+sort: 8
 ---
 
 # Starting with Graph
 
-
-
-This guide will explain how to use a Graph database with JNoSQL. 
+This guide will explain how to use a Graph database with JNoSQL.
 In computing, a graph database (GDB) is a database that uses graph structures for semantic queries with nodes, edges, and properties to represent and store data. A key concept of the system is the graph (or edge or relationship). The graph relates the data items in the store to a collection of nodes and edges, the edges representing the relationships between the nodes. The relationships allow data in the store to be linked together directly and, in many cases, retrieved with one operation. Graph databases hold the relationships between data as a priority. Querying relationships is fast because they are perpetually stored in the database. Relationships can be intuitively visualized using graph databases, making them useful for heavily inter-connected data.
 
-In a maven project, the first step is to add the dependencies. Where we'll add the Mapper dependency, think JPA to Graph NoSQL, and then a communication dependency, think JDBC to Document NoSQL.  Where we're using [Apache Tinkerpop](https://tinkerpop.apache.org/).
+In a maven project, the first step is to add the dependencies. Where we'll add the Mapper dependency, think JPA to Graph NoSQL, and then a communication dependency, think JDBC to Document NoSQL. Where we're using [Apache Tinkerpop](https://tinkerpop.apache.org/).
 
 **1 Add the Eclipse JNoSQL Artemis dependency;**
 
@@ -24,7 +21,7 @@ In a maven project, the first step is to add the dependencies. Where we'll add t
 
 [Check here to take the latest version.](https://mvnrepository.com/artifact/org.eclipse.jnosql.artemis/artemis-graph)
 
-**Choose any graph with TinkerPop support, e.g:** 
+**Choose any graph with TinkerPop support, e.g:**
 
 ```xml
 <dependency>
